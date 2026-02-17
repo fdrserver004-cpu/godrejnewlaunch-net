@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Lora' rel='stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Godrej Projects in Gurgaon</title>
+
+
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11550340954"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11550340954');
+   </script>
+
+
+
+   <style>
+      .phone-group {
+         display: flex;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         overflow: hidden;
+         background-color: #fff;
+      }
+
+      .phone-group select {
+         border: none;
+         padding: 10px 12px;
+         background-color: #f9f9f9;
+         font-size: 14px;
+         width: 110px;
+         appearance: none;
+         -webkit-appearance: none;
+         border-right: 1px solid #ddd;
+      }
+
+      .phone-group input {
+         border: none;
+         padding: 10px;
+         font-size: 14px;
+         flex: 1;
+         outline: none;
+      }
+
+
+      .form-popup-bg {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+      }
+
+      .form-popup-bg {
+         position: fixed;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(94, 110, 141, 0.9);
+         opacity: 0;
+         visibility: hidden;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         overflow-y: auto;
+         z-index: 10000;
+      }
+
+      .form-popup-bg.is-visible {
+         opacity: 1;
+         visibility: visible;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+         transition: opacity 0.3s 0s, visibility 0s 0s;
+      }
+
+      .form-container {
+         background-color: #fdfdfd;
+         border-radius: 10px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         max-width: 466px;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+         padding: 28px;
+         color: #000000;
+      }
+
+      .close-button {
+         color: #000000;
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         top: 18px;
+         right: 12px;
+         border: solid 2px #000000;
+         place-content: center;
+         display: flex;
+         align-items: center;
+         z-index: 99;
+         background-color: transparent;
+      }
+
+      .form-popup-bg:before {
+         content: '';
+         background-color: #000000;
+         opacity: 0.25;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+
+      .popup_form {
+         width: 100%;
+         padding: .375rem .75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         background: none;
+         border: 1px solid #000000;
+         outline: none;
+         color: #000000 !important;
+
+      }
+
+      .form-popup-bg .form-control:focus {
+         background: none !important;
+      }
+
+      .form-popup-bg .form-control::placeholder {
+         color: #000000;
+      }
+
+      .b-user-message {
+         position: absolute;
+         left: -5000px;
+         text-indent: 100%;
+         white-space: nowrap;
+         overflow: hidden;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <!-- ======== gurgaon from ========= -->
+
+   <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+      <div class="modal-dialog form-container">
+         <div class="modal-content ">
+            <div class="modal-header header_bg_close">
+               <h5 class="modal-title" id="enquireModalLabel">Godrej Projects in Gurgaon</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row  align-items-center">
+
+
+
+               <div class="col-sm-12 col-sm-12">
+                  <div class="form_text">
+                     <div class="modal-body form_text">
+                        <form class="contact-box rt-contact-form1 banner_form" action="https://fdr-api.pixleo.com/lead"
+                           method="post">
+                           <div class=row>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                    class="form-control popup_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                              </div>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                    class="form-control popup_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                              </div>
+                              <div class="phone-group mb-3">
+                                 <select name="COUNTRYCODE" id="COUNTRYCODE" required>
+                                    <option value="+971">+971 (UAE)</option>
+                                    <option value="+91">+91 (India)</option>
+                                    <option value="+93">+93 (Afghanistan)</option>
+                                    <option value="+355">+355 (Albania)</option>
+                                    <option value="+213">+213 (Algeria)</option>
+                                    <option value="+376">+376 (Andorra)</option>
+                                    <option value="+244">+244 (Angola)</option>
+                                    <option value="+1-268">+1-268 (Antigua & Barbuda)</option>
+                                    <option value="+54">+54 (Argentina)</option>
+                                    <option value="+374">+374 (Armenia)</option>
+                                    <option value="+61">+61 (Australia)</option>
+                                    <option value="+43">+43 (Austria)</option>
+                                    <option value="+994">+994 (Azerbaijan)</option>
+                                    <option value="+973">+973 (Bahrain)</option>
+                                    <option value="+880">+880 (Bangladesh)</option>
+                                    <option value="+375">+375 (Belarus)</option>
+                                    <option value="+32">+32 (Belgium)</option>
+                                    <option value="+501"> +501 (Belize)</option>
+                                    <option value="+229">+229 (Benin)</option>
+                                    <option value="+975">+975 (Bhutan)</option>
+                                    <option value="+591">+591 (Bolivia)</option>
+                                    <option value="+387">+387 (Bosnia & Herzegovina)</option>
+                                    <option value="+267">+267 (Botswana)</option>
+                                    <option value="+55">+55 (Brazil)</option>
+                                    <option value="+673">+673 (Brunei)</option>
+                                    <option value="+359">+359 (Bulgaria)</option>
+                                    <option value="+226">+226 (Burkina Faso)</option>
+                                    <option value="+95">+95 (Myanmar (Burma))</option>
+                                    <option value="+257">+257 (Burundi)</option>
+                                    <option value="+855">+855 (Cambodia)</option>
+                                    <option value="+237">+237 (Cameroon)</option>
+                                    <option value="+1">+1 (Canada)</option>
+                                    <option value="+238">🇨🇻 +238 (Cape Verde)</option>
+                                    <option value="+236">🇨🇫 +236 (Central African Republic)</option>
+                                    <option value="+235">🇹🇩 +235 (Chad)</option>
+                                    <option value="+56">🇨🇱 +56 (Chile)</option>
+                                    <option value="+86">🇨🇳 +86 (China)</option>
+                                    <option value="+57">🇨🇴 +57 (Colombia)</option>
+                                    <option value="+269">🇰🇲 +269 (Comoros)</option>
+                                    <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                                    <option value="+385">🇭🇷 +385 (Croatia)</option>
+                                    <option value="+53">🇨🇺 +53 (Cuba)</option>
+                                    <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                                    <option value="+420">🇨🇿 +420 (Czech Republic)</option>
+                                    <option value="+45">🇩🇰 +45 (Denmark)</option>
+                                    <option value="+253">🇩🇯 +253 (Djibouti)</option>
+                                    <option value="+1-767">🇩🇲 +1-767 (Dominica)</option>
+                                    <option value="+1-809">🇩🇴 +1-809 (Dominican Republic)</option>
+                                    <option value="+593">🇪🇨 +593 (Ecuador)</option>
+                                    <option value="+20">🇪🇬 +20 (Egypt)</option>
+                                    <option value="+503">🇸🇻 +503 (El Salvador)</option>
+                                    <option value="+240">🇬🇶 +240 (Equatorial Guinea)</option>
+                                    <option value="+291">🇪🇷 +291 (Eritrea)</option>
+                                    <option value="+372">🇪🇪 +372 (Estonia)</option>
+                                    <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                                    <option value="+679">🇫🇯 +679 (Fiji)</option>
+                                    <option value="+358">🇫🇮 +358 (Finland)</option>
+                                    <option value="+33">🇫🇷 +33 (France)</option>
+                                    <option value="+995">🇬🇪 +995 (Georgia)</option>
+                                    <option value="+49">🇩🇪 +49 (Germany)</option>
+                                    <option value="+233">🇬🇭 +233 (Ghana)</option>
+                                    <option value="+30">🇬🇷 +30 (Greece)</option>
+                                    <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                                    <option value="+36">🇭🇺 +36 (Hungary)</option>
+                                    <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                                    <option value="+98">🇮🇷 +98 (Iran)</option>
+                                    <option value="+964">🇮🇶 +964 (Iraq)</option>
+                                    <option value="+353">🇮🇪 +353 (Ireland)</option>
+                                    <option value="+972">🇮🇱 +972 (Israel)</option>
+                                    <option value="+39">🇮🇹 +39 (Italy)</option>
+                                    <option value="+81">🇯🇵 +81 (Japan)</option>
+                                    <option value="+962">🇯🇴 +962 (Jordan)</option>
+                                    <option value="+7">🇷🇺 +7 (Kazakhstan/Russia)</option>
+                                    <option value="+254">🇰🇪 +254 (Kenya)</option>
+                                    <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                                    <option value="+996">🇰🇬 +996 (Kyrgyzstan)</option>
+                                    <option value="+856">🇱🇦 +856 (Laos)</option>
+                                    <option value="+371">🇱🇻 +371 (Latvia)</option>
+                                    <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                                    <option value="+218">🇱🇾 +218 (Libya)</option>
+                                    <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                                    <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                                    <option value="+853">🇲🇴 +853 (Macau)</option>
+                                    <option value="+389">🇲🇰 +389 (North Macedonia)</option>
+                                    <option value="+261">🇲🇬 +261 (Madagascar)</option>
+                                    <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                                    <option value="+960">🇲🇻 +960 (Maldives)</option>
+                                    <option value="+223">🇲🇱 +223 (Mali)</option>
+                                    <option value="+356">🇲🇹 +356 (Malta)</option>
+                                    <option value="+230">🇲🇺 +230 (Mauritius)</option>
+                                    <option value="+52">🇲🇽 +52 (Mexico)</option>
+                                    <option value="+373">🇲🇩 +373 (Moldova)</option>
+                                    <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                                    <option value="+212">🇲🇦 +212 (Morocco)</option>
+                                    <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                                    <option value="+977">🇳🇵 +977 (Nepal)</option>
+                                    <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                                    <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                                    <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                                    <option value="+47">🇳🇴 +47 (Norway)</option>
+                                    <option value="+968">🇴🇲 +968 (Oman)</option>
+                                    <option value="+507">🇵🇦 +507 (Panama)</option>
+                                    <option value="+51">🇵🇪 +51 (Peru)</option>
+                                    <option value="+63">🇵🇭 +63 (Philippines)</option>
+                                    <option value="+48">🇵🇱 +48 (Poland)</option>
+                                    <option value="+351">🇵🇹 +351 (Portugal)</option>
+                                    <option value="+974">🇶🇦 +974 (Qatar)</option>
+                                    <option value="+40">🇷🇴 +40 (Romania)</option>
+                                    <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                                    <option value="+65">🇸🇬 +65 (Singapore)</option>
+                                    <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                                    <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                                    <option value="+27">🇿🇦 +27 (South Africa)</option>
+                                    <option value="+82">🇰🇷 +82 (South Korea)</option>
+                                    <option value="+34">🇪🇸 +34 (Spain)</option>
+                                    <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                                    <option value="+46">🇸🇪 +46 (Sweden)</option>
+                                    <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                                    <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                                    <option value="+66">🇹🇭 +66 (Thailand)</option>
+                                    <option value="+90">🇹🇷 +90 (Turkey)</option>
+                                    <option value="+44">🇬🇧 +44 (UK)</option>
+                                    <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                                    <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                                    <option value="+998">🇺🇿 +998 (Uzbekistan)</option>
+                                    <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                                    <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                                    <option value="+967">🇾🇪 +967 (Yemen)</option>
+                                    <option value="+260">🇿🇲 +260 (Zambia)</option>
+                                    <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                                 </select>
+                                 <input type="text" name="PHONE" id="PHONE" placeholder="Phone/Mobile" required
+                                    pattern="[0-9]{6,14}">
+                              </div>
+
+                              <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                 value="https://www.godrejnewlaunch.net/gurgaon-platter/in">
+                              <div class="col-lg-12 form-group">
+                                 <div class=advanced-button>
+                                    <button class=item-btn id="SubmitQuerytop" type=submit>GET CALL BACK</button>
+                                    <input autocomplete="off" id="prog550688" name="PROJECT" maxlength="200"
+                                       type="hidden" value="Godrej Projects in Gurgaon">
+                                    <input autocomplete=off id=LOCATION name=LOCATION maxlength=200 type=hidden
+                                       value="Gurgaon - International">
+                                    <input autocomplete=off id=TEAM name=TEAM maxlength=200 type=hidden
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                        
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class=form-response></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ======== gurgaon from ========= -->
+
+
+   <!-- ===========================btn sticky icon start================================== -->
+   <div class="sticky_icon">
+      <div class="social_icon">
+         <ul class="d-flex">
+            <div class="col-4">
+               <li><a href="tel:+91-8081969456">Phone</a></li>
+            </div>
+            <div class="col-4">
+               <li><a href="https://api.whatsapp.com/send?phone=+919910111300 &amp;text=Hello, Godrej Projects in Gurgaon Get in touch with me my name is"
+                     target="_blank" class="fixed-Whatsapp">Whatsapp</a></li>
+            </div>
+            <div class="col-4 border-0">
+               <li><a style="cursor: pointer;" class="property-link"
+                     onclick="proprtyForm('Godrej Projects in Gurgaon')">Enquire</a></li>
+            </div>
+         </ul>
+      </div>
+   </div>
+
+
+
+   <!-- modal popup on restart -->
+   <div class="modal fade madal-reload" id="exampleModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close btan_g" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body ">
+
+               <div class="row pt-2 align-items-center">
+
+               </div>
+               <div class="col-sm-12">
+                  <div class="form_modal text-center">
+                     <div class="motal_form_text pb-2">
+                        <h5 class="modal-title" id="exampleModalLabel">Godrej Projects in Gurgaon</h5>
+
+                        <p class="mb-1 pt-2 mb-2 mt-1"><b> Type : </b>3 & 4 BHK Apartments
+                        </p>
+
+                     </div>
+                     <form method="post" action="https://fdr-api.pixleo.com/lead" class="contact-form banner_form pt-2">
+                        <div class="form_sectionr row text-center justify-content-center">
+
+                           <div class="mb-3 position-relative col-lg-12">
+                              <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME" class="form-control text_form"
+                                 data-error="Name cannot contain digit or special character"
+                                 placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                              <span class="icon-inside"><i class="fas fa-user"></i></span>
+                           </div>
+                           <div class="mb-3 position-relative col-lg-12">
+                              <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                 class="form-control text_form email-address"
+                                 data-error="Name cannot contain digit or special character" placeholder="Email Address"
+                                 pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                              <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                           </div>
+                           <div class="d-flex phone_none mb-3">
+                              <select name="COUNTRYCODE" id="COUNTRYCODE" required>
+                                 <option value="+971">+971 (UAE)</option>
+                                 <option value="+91">+91 (India)</option>
+                                 <option value="+93">🇦🇫 +93 (Afghanistan)</option>
+                                 <option value="+355">🇦🇱 +355 (Albania)</option>
+                                 <option value="+213">🇩🇿 +213 (Algeria)</option>
+                                 <option value="+376">🇦🇩 +376 (Andorra)</option>
+                                 <option value="+244">🇦🇴 +244 (Angola)</option>
+                                 <option value="+1-268">🇦🇬 +1-268 (Antigua & Barbuda)</option>
+                                 <option value="+54">🇦🇷 +54 (Argentina)</option>
+                                 <option value="+374">🇦🇲 +374 (Armenia)</option>
+                                 <option value="+61">🇦🇺 +61 (Australia)</option>
+                                 <option value="+43">🇦🇹 +43 (Austria)</option>
+                                 <option value="+994">🇦🇿 +994 (Azerbaijan)</option>
+                                 <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                                 <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                                 <option value="+375">🇧🇾 +375 (Belarus)</option>
+                                 <option value="+32">🇧🇪 +32 (Belgium)</option>
+                                 <option value="+501">🇧🇿 +501 (Belize)</option>
+                                 <option value="+229">🇧🇯 +229 (Benin)</option>
+                                 <option value="+975">🇧🇹 +975 (Bhutan)</option>
+                                 <option value="+591">🇧🇴 +591 (Bolivia)</option>
+                                 <option value="+387">🇧🇦 +387 (Bosnia & Herzegovina)</option>
+                                 <option value="+267">🇧🇼 +267 (Botswana)</option>
+                                 <option value="+55">🇧🇷 +55 (Brazil)</option>
+                                 <option value="+673">🇧🇳 +673 (Brunei)</option>
+                                 <option value="+359">🇧🇬 +359 (Bulgaria)</option>
+                                 <option value="+226">🇧🇫 +226 (Burkina Faso)</option>
+                                 <option value="+95">🇲🇲 +95 (Myanmar (Burma))</option>
+                                 <option value="+257">🇧🇮 +257 (Burundi)</option>
+                                 <option value="+855">🇰🇭 +855 (Cambodia)</option>
+                                 <option value="+237">🇨🇲 +237 (Cameroon)</option>
+                                 <option value="+1">🇨🇦 +1 (Canada)</option>
+                                 <option value="+238">🇨🇻 +238 (Cape Verde)</option>
+                                 <option value="+236">🇨🇫 +236 (Central African Republic)</option>
+                                 <option value="+235">🇹🇩 +235 (Chad)</option>
+                                 <option value="+56">🇨🇱 +56 (Chile)</option>
+                                 <option value="+86">🇨🇳 +86 (China)</option>
+                                 <option value="+57">🇨🇴 +57 (Colombia)</option>
+                                 <option value="+269">🇰🇲 +269 (Comoros)</option>
+                                 <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                                 <option value="+385">🇭🇷 +385 (Croatia)</option>
+                                 <option value="+53">🇨🇺 +53 (Cuba)</option>
+                                 <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                                 <option value="+420">🇨🇿 +420 (Czech Republic)</option>
+                                 <option value="+45">🇩🇰 +45 (Denmark)</option>
+                                 <option value="+253">🇩🇯 +253 (Djibouti)</option>
+                                 <option value="+1-767">🇩🇲 +1-767 (Dominica)</option>
+                                 <option value="+1-809">🇩🇴 +1-809 (Dominican Republic)</option>
+                                 <option value="+593">🇪🇨 +593 (Ecuador)</option>
+                                 <option value="+20">🇪🇬 +20 (Egypt)</option>
+                                 <option value="+503">🇸🇻 +503 (El Salvador)</option>
+                                 <option value="+240">🇬🇶 +240 (Equatorial Guinea)</option>
+                                 <option value="+291">🇪🇷 +291 (Eritrea)</option>
+                                 <option value="+372">🇪🇪 +372 (Estonia)</option>
+                                 <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                                 <option value="+679">🇫🇯 +679 (Fiji)</option>
+                                 <option value="+358">🇫🇮 +358 (Finland)</option>
+                                 <option value="+33">🇫🇷 +33 (France)</option>
+                                 <option value="+995">🇬🇪 +995 (Georgia)</option>
+                                 <option value="+49">🇩🇪 +49 (Germany)</option>
+                                 <option value="+233">🇬🇭 +233 (Ghana)</option>
+                                 <option value="+30">🇬🇷 +30 (Greece)</option>
+                                 <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                                 <option value="+36">🇭🇺 +36 (Hungary)</option>
+                                 <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                                 <option value="+98">🇮🇷 +98 (Iran)</option>
+                                 <option value="+964">🇮🇶 +964 (Iraq)</option>
+                                 <option value="+353">🇮🇪 +353 (Ireland)</option>
+                                 <option value="+972">🇮🇱 +972 (Israel)</option>
+                                 <option value="+39">🇮🇹 +39 (Italy)</option>
+                                 <option value="+81">🇯🇵 +81 (Japan)</option>
+                                 <option value="+962">🇯🇴 +962 (Jordan)</option>
+                                 <option value="+7">🇷🇺 +7 (Kazakhstan/Russia)</option>
+                                 <option value="+254">🇰🇪 +254 (Kenya)</option>
+                                 <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                                 <option value="+996">🇰🇬 +996 (Kyrgyzstan)</option>
+                                 <option value="+856">🇱🇦 +856 (Laos)</option>
+                                 <option value="+371">🇱🇻 +371 (Latvia)</option>
+                                 <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                                 <option value="+218">🇱🇾 +218 (Libya)</option>
+                                 <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                                 <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                                 <option value="+853">🇲🇴 +853 (Macau)</option>
+                                 <option value="+389">🇲🇰 +389 (North Macedonia)</option>
+                                 <option value="+261">🇲🇬 +261 (Madagascar)</option>
+                                 <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                                 <option value="+960">🇲🇻 +960 (Maldives)</option>
+                                 <option value="+223">🇲🇱 +223 (Mali)</option>
+                                 <option value="+356">🇲🇹 +356 (Malta)</option>
+                                 <option value="+230">🇲🇺 +230 (Mauritius)</option>
+                                 <option value="+52">🇲🇽 +52 (Mexico)</option>
+                                 <option value="+373">🇲🇩 +373 (Moldova)</option>
+                                 <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                                 <option value="+212">🇲🇦 +212 (Morocco)</option>
+                                 <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                                 <option value="+977">🇳🇵 +977 (Nepal)</option>
+                                 <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                                 <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                                 <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                                 <option value="+47">🇳🇴 +47 (Norway)</option>
+                                 <option value="+968">🇴🇲 +968 (Oman)</option>
+                                 <option value="+507">🇵🇦 +507 (Panama)</option>
+                                 <option value="+51">🇵🇪 +51 (Peru)</option>
+                                 <option value="+63">🇵🇭 +63 (Philippines)</option>
+                                 <option value="+48">🇵🇱 +48 (Poland)</option>
+                                 <option value="+351">🇵🇹 +351 (Portugal)</option>
+                                 <option value="+974">🇶🇦 +974 (Qatar)</option>
+                                 <option value="+40">🇷🇴 +40 (Romania)</option>
+                                 <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                                 <option value="+65">🇸🇬 +65 (Singapore)</option>
+                                 <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                                 <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                                 <option value="+27">🇿🇦 +27 (South Africa)</option>
+                                 <option value="+82">🇰🇷 +82 (South Korea)</option>
+                                 <option value="+34">🇪🇸 +34 (Spain)</option>
+                                 <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                                 <option value="+46">🇸🇪 +46 (Sweden)</option>
+                                 <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                                 <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                                 <option value="+66">🇹🇭 +66 (Thailand)</option>
+                                 <option value="+90">🇹🇷 +90 (Turkey)</option>
+                                 <option value="+44">🇬🇧 +44 (UK)</option>
+                                 <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                                 <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                                 <option value="+998">🇺🇿 +998 (Uzbekistan)</option>
+                                 <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                                 <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                                 <option value="+967">🇾🇪 +967 (Yemen)</option>
+                                 <option value="+260">🇿🇲 +260 (Zambia)</option>
+                                 <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                              </select>
+                              <input type="text" name="PHONE" id="PHONE" placeholder="Phone/Mobile" required
+                                 pattern="[0-9]{6,14}">
+                           </div>
+                           <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                              value="https://www.godrejnewlaunch.net/gurgaon-platter/in">
+
+                           <div class="col-lg-12 form-group">
+                              <div class="advanced-button">
+                                 <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                    CALL BACK</button>
+                                 <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                    value="Godrej Projects in Gurgaon">
+                                 <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200" type="hidden"
+                                    value="Gurgaon - International">
+                                 <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                    value="umikoindia">
+                                 <div class="form-group b-user-message">
+                                    <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                    <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                       autocomplete="off" />
+                                     
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-response"></div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+
+      </div>
+   </div>
+   <!--  -->
+
+   <!-- ==============btn scroll section start===================== -->
+   <div class="go-top"> </div>
+   <!-- =====================header sart ======================== -->
+
+   <!-- =========================header close ========================== -->
+   <header>
+      <div class="header py-lg-2 py-2 px-lg-5 px-2">
+         <div class="container-xll mx-lg-3 mx-3 header_with">
+            <div class="row align-items-center">
+               <div class="col-lg-2  text-start">
+                  <div class="logo d-flex"> <a class="logo_1" href="#"><img src="img/logo1 (16).png" alt="logo1"
+                           width="150"></a> </div>
+               </div>
+               <div class="col-lg-7">
+                  <div class="menu float-end">
+                     <ul class="d-lg-flex align-items-center">
+                        <li><a class="active hamberger" href="#">Home</a></li>
+                        <li> <a class="hamberger" href="#all_projects">All Projects</a></li>
+                        <li> <a class="property-link btn-a btnOpenForm"
+                              onclick="proprtyForm('Godrej Projects in Gurgaon')">Schedule Site
+                              Visit</a></li>
+                        <li> <a class="hamberger" href="#amenities">Amenities</a></li>
+                        <li> <a class="hamberger" href="#contectus">Contact Us</a></li>
+                     </ul>
+                     <div class="hamberger">
+                        <div class="mobilemenu"> </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="col-lg-3">
+                  <div class="contect-us float-end " style="float: right !important;">
+                     <div class="d-flex ">
+                        <ul class="d-flex me-2 align-items-center">
+                           <li class="me-3"><a href="tel:+91-8081969456"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></a>
+                           </li>
+                           <li> <a href="tel:+91-8081969456"><span>+91-8081969456</span></a> </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+            </div>
+         </div>
+      </div>
+
+   </header> <!-- =========================header close ========================== -->
+
+   <!-- =========================header close ========================== -->
+   <div class="banner_bg">
+      <div class="banner">
+         <div class="banner_img">
+            <div class="img_banner">
+               <img src="img/main-banner.png" width="100%" alt="banner_bg">
+            </div>
+
+            <div class="banner_text mx-md-3">
+               <div class="container-fluid  ">
+                  <div class="row align-items-center">
+
+                     <div class="col-lg-7 d-flex">
+                        <div class="banner_wrapper_text">
+                           <div class="banner-text">
+                              <h1 class="banner-name">Godrej Projects in Gurgaon</h1>
+                              <h2 class="banner-type ">3 & 4 BHK Apartments</h2>
+                              <h3 class="p-2 banner-price primary-bg">Starting Price : 3.50 Cr* Onwards</h3>
+
+                              <div class="banner-highlight">
+                                 <p class="fw-bold"><i class="fa-solid fa-check"></i>Flexible Payment Plans
+                                 </p>
+                                 <p class="fw-bold"><i class="fa-solid fa-check"></i>World-Class Amenities</p>
+                                 <p class="fw-bold"><i class="fa-solid fa-check"></i>Living at the Heart of a
+                                    Well-Planned Township
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="col-lg-5 mb-mobile mb-mobile col-md-5 d-none d-md-block">
+
+                        <div class="Banner-form  float-end">
+                           <form method="post" action="https://fdr-api.pixleo.com/lead"
+                              class="contact-form banner_form">
+                              <div class="form_section text-center">
+                                 <h3 class="form_title mb-2">Schedule A Site Visit</h3>
+                                 <p class="mb-4">Please fill out the form below, our expert will get back to you soon.
+                                 </p>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                       class="form-control text_form"
+                                       data-error="Name cannot contain digit or special character"
+                                       placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                    <span class="icon-inside"><i class="fas fa-user"></i></span>
+                                 </div>
+                                 <div class="mb-4 position-relative">
+                                    <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                       class="form-control text_form email-address"
+                                       data-error="Name cannot contain digit or special character"
+                                       placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                       required="">
+                                    <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                                 </div>
+                                 <div class="phone-group mb-3">
+                                    <select name="COUNTRYCODE" id="COUNTRYCODE" required>
+                                       <option value="+971">+971 (UAE)</option>
+                                       <option value="+91">🇮🇳 +91 (India)</option>
+                                       <option value="+93">+93 (Afghanistan)</option>
+                                       <option value="+355">+355 (Albania)</option>
+                                       <option value="+213">+213 (Algeria)</option>
+                                       <option value="+376">+376 (Andorra)</option>
+                                       <option value="+244">+244 (Angola)</option>
+                                       <option value="+1-268">🇦🇬 +1-268 (Antigua & Barbuda)</option>
+                                       <option value="+54">🇦🇷 +54 (Argentina)</option>
+                                       <option value="+374">🇦🇲 +374 (Armenia)</option>
+                                       <option value="+61">🇦🇺 +61 (Australia)</option>
+                                       <option value="+43">🇦🇹 +43 (Austria)</option>
+                                       <option value="+994">🇦🇿 +994 (Azerbaijan)</option>
+                                       <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                                       <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                                       <option value="+375">🇧🇾 +375 (Belarus)</option>
+                                       <option value="+32">🇧🇪 +32 (Belgium)</option>
+                                       <option value="+501">🇧🇿 +501 (Belize)</option>
+                                       <option value="+229">🇧🇯 +229 (Benin)</option>
+                                       <option value="+975">🇧🇹 +975 (Bhutan)</option>
+                                       <option value="+591">🇧🇴 +591 (Bolivia)</option>
+                                       <option value="+387">🇧🇦 +387 (Bosnia & Herzegovina)</option>
+                                       <option value="+267">🇧🇼 +267 (Botswana)</option>
+                                       <option value="+55">🇧🇷 +55 (Brazil)</option>
+                                       <option value="+673">🇧🇳 +673 (Brunei)</option>
+                                       <option value="+359">🇧🇬 +359 (Bulgaria)</option>
+                                       <option value="+226">🇧🇫 +226 (Burkina Faso)</option>
+                                       <option value="+95">🇲🇲 +95 (Myanmar (Burma))</option>
+                                       <option value="+257">🇧🇮 +257 (Burundi)</option>
+                                       <option value="+855">🇰🇭 +855 (Cambodia)</option>
+                                       <option value="+237">🇨🇲 +237 (Cameroon)</option>
+                                       <option value="+1">🇨🇦 +1 (Canada)</option>
+                                       <option value="+238">🇨🇻 +238 (Cape Verde)</option>
+                                       <option value="+236">🇨🇫 +236 (Central African Republic)</option>
+                                       <option value="+235">🇹🇩 +235 (Chad)</option>
+                                       <option value="+56">🇨🇱 +56 (Chile)</option>
+                                       <option value="+86">🇨🇳 +86 (China)</option>
+                                       <option value="+57">🇨🇴 +57 (Colombia)</option>
+                                       <option value="+269">🇰🇲 +269 (Comoros)</option>
+                                       <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                                       <option value="+385">🇭🇷 +385 (Croatia)</option>
+                                       <option value="+53">🇨🇺 +53 (Cuba)</option>
+                                       <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                                       <option value="+420">🇨🇿 +420 (Czech Republic)</option>
+                                       <option value="+45">🇩🇰 +45 (Denmark)</option>
+                                       <option value="+253">🇩🇯 +253 (Djibouti)</option>
+                                       <option value="+1-767">🇩🇲 +1-767 (Dominica)</option>
+                                       <option value="+1-809">🇩🇴 +1-809 (Dominican Republic)</option>
+                                       <option value="+593">🇪🇨 +593 (Ecuador)</option>
+                                       <option value="+20">🇪🇬 +20 (Egypt)</option>
+                                       <option value="+503">🇸🇻 +503 (El Salvador)</option>
+                                       <option value="+240">🇬🇶 +240 (Equatorial Guinea)</option>
+                                       <option value="+291">🇪🇷 +291 (Eritrea)</option>
+                                       <option value="+372">🇪🇪 +372 (Estonia)</option>
+                                       <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                                       <option value="+679">🇫🇯 +679 (Fiji)</option>
+                                       <option value="+358">🇫🇮 +358 (Finland)</option>
+                                       <option value="+33">🇫🇷 +33 (France)</option>
+                                       <option value="+995">🇬🇪 +995 (Georgia)</option>
+                                       <option value="+49">🇩🇪 +49 (Germany)</option>
+                                       <option value="+233">🇬🇭 +233 (Ghana)</option>
+                                       <option value="+30">🇬🇷 +30 (Greece)</option>
+                                       <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                                       <option value="+36">🇭🇺 +36 (Hungary)</option>
+                                       <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                                       <option value="+98">🇮🇷 +98 (Iran)</option>
+                                       <option value="+964">🇮🇶 +964 (Iraq)</option>
+                                       <option value="+353">🇮🇪 +353 (Ireland)</option>
+                                       <option value="+972">🇮🇱 +972 (Israel)</option>
+                                       <option value="+39">🇮🇹 +39 (Italy)</option>
+                                       <option value="+81">🇯🇵 +81 (Japan)</option>
+                                       <option value="+962">🇯🇴 +962 (Jordan)</option>
+                                       <option value="+7">🇷🇺 +7 (Kazakhstan/Russia)</option>
+                                       <option value="+254">🇰🇪 +254 (Kenya)</option>
+                                       <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                                       <option value="+996">🇰🇬 +996 (Kyrgyzstan)</option>
+                                       <option value="+856">🇱🇦 +856 (Laos)</option>
+                                       <option value="+371">🇱🇻 +371 (Latvia)</option>
+                                       <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                                       <option value="+218">🇱🇾 +218 (Libya)</option>
+                                       <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                                       <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                                       <option value="+853">🇲🇴 +853 (Macau)</option>
+                                       <option value="+389">🇲🇰 +389 (North Macedonia)</option>
+                                       <option value="+261">🇲🇬 +261 (Madagascar)</option>
+                                       <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                                       <option value="+960">🇲🇻 +960 (Maldives)</option>
+                                       <option value="+223">🇲🇱 +223 (Mali)</option>
+                                       <option value="+356">🇲🇹 +356 (Malta)</option>
+                                       <option value="+230">🇲🇺 +230 (Mauritius)</option>
+                                       <option value="+52">🇲🇽 +52 (Mexico)</option>
+                                       <option value="+373">🇲🇩 +373 (Moldova)</option>
+                                       <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                                       <option value="+212">🇲🇦 +212 (Morocco)</option>
+                                       <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                                       <option value="+977">🇳🇵 +977 (Nepal)</option>
+                                       <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                                       <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                                       <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                                       <option value="+47">🇳🇴 +47 (Norway)</option>
+                                       <option value="+968">🇴🇲 +968 (Oman)</option>
+                                       <option value="+507">🇵🇦 +507 (Panama)</option>
+                                       <option value="+51">🇵🇪 +51 (Peru)</option>
+                                       <option value="+63">🇵🇭 +63 (Philippines)</option>
+                                       <option value="+48">🇵🇱 +48 (Poland)</option>
+                                       <option value="+351">🇵🇹 +351 (Portugal)</option>
+                                       <option value="+974">🇶🇦 +974 (Qatar)</option>
+                                       <option value="+40">🇷🇴 +40 (Romania)</option>
+                                       <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                                       <option value="+65">🇸🇬 +65 (Singapore)</option>
+                                       <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                                       <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                                       <option value="+27">🇿🇦 +27 (South Africa)</option>
+                                       <option value="+82">🇰🇷 +82 (South Korea)</option>
+                                       <option value="+34">🇪🇸 +34 (Spain)</option>
+                                       <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                                       <option value="+46">🇸🇪 +46 (Sweden)</option>
+                                       <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                                       <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                                       <option value="+66">🇹🇭 +66 (Thailand)</option>
+                                       <option value="+90">🇹🇷 +90 (Turkey)</option>
+                                       <option value="+44">🇬🇧 +44 (UK)</option>
+                                       <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                                       <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                                       <option value="+998">🇺🇿 +998 (Uzbekistan)</option>
+                                       <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                                       <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                                       <option value="+967">🇾🇪 +967 (Yemen)</option>
+                                       <option value="+260">🇿🇲 +260 (Zambia)</option>
+                                       <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                                    </select>
+                                    <input type="text" name="PHONE" id="PHONE" placeholder="Mobile" required
+                                       pattern="[0-9]{6,14}">
+                                 </div>
+                                 <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                    value="https://www.godrejnewlaunch.net/gurgaon-platter/in">
+
+                                 <div class="col-lg-12 form-group">
+                                    <div class="advanced-button">
+                                       <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                          CALL BACK</button>
+                                       <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200"
+                                          type="hidden" value="Godrej Projects in Gurgaon">
+                                       <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200"
+                                          type="hidden" value="Gurgaon - International">
+                                       <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                          value="umikoindia">
+                                       <div class="form-group b-user-message">
+                                          <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                          <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1"
+                                             value="" autocomplete="off" />
+
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-response"></div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+
+
+   </div>
+
+   <!-- banner section closed -->
+   <div class="form_bottom m-3">
+      <div class="col-lg-4 mb-mobile col-md-5 d-block d-md-none">
+         <div class="Banner-form-mb">
+            <form method="post" action="https://fdr-api.pixleo.com/lead" class="contact-form banner_form">
+               <div class="form_section">
+                  <div class="form_text text-center">
+                     <h3 class="form_title mb-3"> Schedule A Site Visit </h3>
+                     <p class="mb-4 text-dark">Please fill out the form below, our expert will get back to you soon.
+                     </p>
+                  </div>
+                  <div class="mb-4 position-relative">
+                     <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME" class="form-control text_form"
+                        data-error="Name cannot contain digit or special character" placeholder="Your Full Name"
+                        pattern="[a-zA-Z ]{4,35}" required="">
+                     <span class="icon-inside"><i class="fas fa-user"></i></span>
+                  </div>
+                  <div class="mb-4 position-relative">
+                     <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                        class="form-control text_form email-address"
+                        data-error="Name cannot contain digit or special character" placeholder="Email Address"
+                        pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+" required="">
+                     <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <div class="phone-group mb-3">
+                     <select name="COUNTRYCODE" id="COUNTRYCODE" required>
+                        <option value="+971">+971 (UAE)</option>
+                        <option value="+91">+91 (India)</option>
+                        <option value="+93">+93 (Afghanistan)</option>
+                        <option value="+355">🇦🇱 +355 (Albania)</option>
+                        <option value="+213">🇩🇿 +213 (Algeria)</option>
+                        <option value="+376">🇦🇩 +376 (Andorra)</option>
+                        <option value="+244">🇦🇴 +244 (Angola)</option>
+                        <option value="+1-268">🇦🇬 +1-268 (Antigua & Barbuda)</option>
+                        <option value="+54">🇦🇷 +54 (Argentina)</option>
+                        <option value="+374">🇦🇲 +374 (Armenia)</option>
+                        <option value="+61">🇦🇺 +61 (Australia)</option>
+                        <option value="+43">🇦🇹 +43 (Austria)</option>
+                        <option value="+994">🇦🇿 +994 (Azerbaijan)</option>
+                        <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                        <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                        <option value="+375">🇧🇾 +375 (Belarus)</option>
+                        <option value="+32">🇧🇪 +32 (Belgium)</option>
+                        <option value="+501">🇧🇿 +501 (Belize)</option>
+                        <option value="+229">🇧🇯 +229 (Benin)</option>
+                        <option value="+975">🇧🇹 +975 (Bhutan)</option>
+                        <option value="+591">🇧🇴 +591 (Bolivia)</option>
+                        <option value="+387">🇧🇦 +387 (Bosnia & Herzegovina)</option>
+                        <option value="+267">🇧🇼 +267 (Botswana)</option>
+                        <option value="+55">🇧🇷 +55 (Brazil)</option>
+                        <option value="+673">🇧🇳 +673 (Brunei)</option>
+                        <option value="+359">🇧🇬 +359 (Bulgaria)</option>
+                        <option value="+226">🇧🇫 +226 (Burkina Faso)</option>
+                        <option value="+95">🇲🇲 +95 (Myanmar (Burma))</option>
+                        <option value="+257">🇧🇮 +257 (Burundi)</option>
+                        <option value="+855">🇰🇭 +855 (Cambodia)</option>
+                        <option value="+237">🇨🇲 +237 (Cameroon)</option>
+                        <option value="+1">🇨🇦 +1 (Canada)</option>
+                        <option value="+238">🇨🇻 +238 (Cape Verde)</option>
+                        <option value="+236">🇨🇫 +236 (Central African Republic)</option>
+                        <option value="+235">🇹🇩 +235 (Chad)</option>
+                        <option value="+56">🇨🇱 +56 (Chile)</option>
+                        <option value="+86">🇨🇳 +86 (China)</option>
+                        <option value="+57">🇨🇴 +57 (Colombia)</option>
+                        <option value="+269">🇰🇲 +269 (Comoros)</option>
+                        <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                        <option value="+385">🇭🇷 +385 (Croatia)</option>
+                        <option value="+53">🇨🇺 +53 (Cuba)</option>
+                        <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                        <option value="+420">🇨🇿 +420 (Czech Republic)</option>
+                        <option value="+45">🇩🇰 +45 (Denmark)</option>
+                        <option value="+253">🇩🇯 +253 (Djibouti)</option>
+                        <option value="+1-767">🇩🇲 +1-767 (Dominica)</option>
+                        <option value="+1-809">🇩🇴 +1-809 (Dominican Republic)</option>
+                        <option value="+593">🇪🇨 +593 (Ecuador)</option>
+                        <option value="+20">🇪🇬 +20 (Egypt)</option>
+                        <option value="+503">🇸🇻 +503 (El Salvador)</option>
+                        <option value="+240">🇬🇶 +240 (Equatorial Guinea)</option>
+                        <option value="+291">🇪🇷 +291 (Eritrea)</option>
+                        <option value="+372">🇪🇪 +372 (Estonia)</option>
+                        <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                        <option value="+679">🇫🇯 +679 (Fiji)</option>
+                        <option value="+358">🇫🇮 +358 (Finland)</option>
+                        <option value="+33">🇫🇷 +33 (France)</option>
+                        <option value="+995">🇬🇪 +995 (Georgia)</option>
+                        <option value="+49">🇩🇪 +49 (Germany)</option>
+                        <option value="+233">🇬🇭 +233 (Ghana)</option>
+                        <option value="+30">🇬🇷 +30 (Greece)</option>
+                        <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                        <option value="+36">🇭🇺 +36 (Hungary)</option>
+                        <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                        <option value="+98">🇮🇷 +98 (Iran)</option>
+                        <option value="+964">🇮🇶 +964 (Iraq)</option>
+                        <option value="+353">🇮🇪 +353 (Ireland)</option>
+                        <option value="+972">🇮🇱 +972 (Israel)</option>
+                        <option value="+39">🇮🇹 +39 (Italy)</option>
+                        <option value="+81">🇯🇵 +81 (Japan)</option>
+                        <option value="+962">🇯🇴 +962 (Jordan)</option>
+                        <option value="+7">🇷🇺 +7 (Kazakhstan/Russia)</option>
+                        <option value="+254">🇰🇪 +254 (Kenya)</option>
+                        <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                        <option value="+996">🇰🇬 +996 (Kyrgyzstan)</option>
+                        <option value="+856">🇱🇦 +856 (Laos)</option>
+                        <option value="+371">🇱🇻 +371 (Latvia)</option>
+                        <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                        <option value="+218">🇱🇾 +218 (Libya)</option>
+                        <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                        <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                        <option value="+853">🇲🇴 +853 (Macau)</option>
+                        <option value="+389">🇲🇰 +389 (North Macedonia)</option>
+                        <option value="+261">🇲🇬 +261 (Madagascar)</option>
+                        <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                        <option value="+960">🇲🇻 +960 (Maldives)</option>
+                        <option value="+223">🇲🇱 +223 (Mali)</option>
+                        <option value="+356">🇲🇹 +356 (Malta)</option>
+                        <option value="+230">🇲🇺 +230 (Mauritius)</option>
+                        <option value="+52">🇲🇽 +52 (Mexico)</option>
+                        <option value="+373">🇲🇩 +373 (Moldova)</option>
+                        <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                        <option value="+212">🇲🇦 +212 (Morocco)</option>
+                        <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                        <option value="+977">🇳🇵 +977 (Nepal)</option>
+                        <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                        <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                        <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                        <option value="+47">🇳🇴 +47 (Norway)</option>
+                        <option value="+968">🇴🇲 +968 (Oman)</option>
+                        <option value="+507">🇵🇦 +507 (Panama)</option>
+                        <option value="+51">🇵🇪 +51 (Peru)</option>
+                        <option value="+63">🇵🇭 +63 (Philippines)</option>
+                        <option value="+48">🇵🇱 +48 (Poland)</option>
+                        <option value="+351">🇵🇹 +351 (Portugal)</option>
+                        <option value="+974">🇶🇦 +974 (Qatar)</option>
+                        <option value="+40">🇷🇴 +40 (Romania)</option>
+                        <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                        <option value="+65">🇸🇬 +65 (Singapore)</option>
+                        <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                        <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                        <option value="+27">🇿🇦 +27 (South Africa)</option>
+                        <option value="+82">🇰🇷 +82 (South Korea)</option>
+                        <option value="+34">🇪🇸 +34 (Spain)</option>
+                        <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                        <option value="+46">🇸🇪 +46 (Sweden)</option>
+                        <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                        <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                        <option value="+66">🇹🇭 +66 (Thailand)</option>
+                        <option value="+90">🇹🇷 +90 (Turkey)</option>
+                        <option value="+44">🇬🇧 +44 (UK)</option>
+                        <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                        <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                        <option value="+998">🇺🇿 +998 (Uzbekistan)</option>
+                        <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                        <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                        <option value="+967">🇾🇪 +967 (Yemen)</option>
+                        <option value="+260">🇿🇲 +260 (Zambia)</option>
+                        <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                     </select>
+                     <input type="text" name="PHONE" id="PHONE" placeholder="Phone/Mobile" required
+                        pattern="[0-9]{6,14}">
+                  </div>
+                  <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                     value="https://www.godrejnewlaunch.net/gurgaon-platter/in">
+
+                  <div class="col-lg-12 form-group">
+                     <div class="advanced-button">
+                        <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                           CALL BACK</button>
+                        <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                           value="Godrej Projects in Gurgaon">
+                        <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200" type="hidden"
+                           value="Gurgaon - International">
+                        <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                           value="umikoindia">
+                        <div class="form-group b-user-message">
+                           <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                           <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                              autocomplete="off" />  
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-response"></div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!-- price -->
+
+
+
+
+   <section class="property-section" id="all_projects">
+      <div class="container">
+
+         <div class="text-center mb-5">
+            <h2 class="amenities_title">Godrej Projects in Gurgaon</h2>
+            <p class="amenities_subtitle">
+               Find your dream home from our Premium Properties
+            </p>
+         </div>
+
+         <div class="row price-box ">
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej New Launch</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> At Golf Course Road Gurgaon</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>New Launch</span>
+                     <img src="img/Godrej upcoming (1).png" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : 3 & 4 BHK Apartments & Penthouse
+                     </p>
+
+                     <ul class="property-info">
+                        <li class=""><i class="bi bi-arrow-right-circle-fill"></i>Land Area: 7 acre</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i>G+36 ultra-luxury towers
+
+                        </li>
+
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 10 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej New Launch')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej Alira</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> At Sector 39, NH 48, Gurugram</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>New Launch</span>
+                     <img src="img/Godrej Alira.png" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : 3 & 4 BHK Apartments
+                     </p>
+
+                     <ul class="property-info">
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> Number of Units 132</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> Land Parcel 14 Acres</li>
+                        <li class="mb-0"><i class="bi bi-arrow-right-circle-fill"></i> 24-hour security system</li>
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 5.34 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej Alira')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej Sora</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> Sector 53, Golf Course Extension Road, Gurgaon</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>New Launch</span>
+                     <img src="img/Godrej Sector 53.png" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : 3 & 4 BHK Apartments
+                     </p>
+
+                     <ul class="property-info">
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> Surrounded by Nature</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> Land Parcel: ~ 3.7 Acres</li>
+                        <li class="mb-0"><i class="bi bi-arrow-right-circle-fill"></i> Double-height entrance lobby</li>
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 7.99 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej Sora')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej Astra</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> At Sector 54, Golf Course Road, Gurgaon</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>New Launch</span>
+                     <img src="img/Godrej Astra.png" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : 3 & 4 BHK + Svt Apartments
+                     </p>
+
+                     <ul class="property-info">
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> G+28 to G+35</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> 3 Levels of Basement</li>
+                        <li class="mb-0"><i class="bi bi-arrow-right-circle-fill"></i> EOI Amount: 20 Lacs</li>
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 10 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej Astra')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej Miraya</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> At Sector 43, Golf Course Road, Gurgaon</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>New Launch</span>
+                     <img src="img/godrej-miraya.avif" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : 3 & 4 BHK Luxury Apartments
+                     </p>
+
+                     <ul class="property-info">
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> 248 Units</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> Tower Heights: G + 31 and G + 32</li>
+                        <li class="mb-0"><i class="bi bi-arrow-right-circle-fill"></i> Expansive Land Area: ~ 5.16 Acres
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 9.21 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej Miraya')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej Vrikshya</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> At Sector 103, Gurugram</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>New Launch</span>
+                     <img src="img/Godrej Vrikshya.png" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : Premium 3 & 4 BHK
+                     </p>
+
+                     <ul class="property-info">
+                        <li><i class="bi bi-arrow-right-circle-fill"></i>
+                           Land Parcel 4.5 Acres</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i>
+                           42 apartments per acre.</li>
+                        <li class="mb-0"><i class="bi bi-arrow-right-circle-fill"></i>
+                           Sheetla Mata Medical College with 650 Beds.</li>
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 3.36 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej Vrikshya')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               <div class="property-card">
+
+                  <!-- TOP CENTER TEXT -->
+                  <div class="property-top">
+                     <h4>Godrej Aristocrat</h4>
+                     <span><i class="fas fa-map-marker-alt"></i> At Sector 49, Gurgaon</span>
+                  </div>
+
+                  <!-- IMAGE -->
+                  <div class="property-img">
+                     <span>Upcoming</span>
+                     <img src="img/Godrej Aristocrat.png" alt="">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="property-content">
+                     <p class="location">
+                        Type : Spacious 3 & 4 BHK Homes
+                     </p>
+
+                     <ul class="property-info">
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> 24*7 active concierge services</li>
+                        <li><i class="bi bi-arrow-right-circle-fill"></i> Gated township with 5-tier security</li>
+                        <li class="mb-0"><i class="bi bi-arrow-right-circle-fill"></i> Grand entrance with high-tech
+                           amenities.</li>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- FOOTER -->
+                  <div class="property-footer">
+                     <span class="price">Starting Price : ₹ 5.28 Cr* <sub>Onwards</sub></span>
+                     <div class="btan">
+                        <a class="property-link btnOpenForm" onclick="proprtyForm('Godrej Vrikshya')">Interested</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <style>
+      /* price */
+
+
+      .property-section {
+         padding: 80px 0;
+         background: #232323;
+         font-family: 'Exo 2', sans-serif;
+         position: relative;
+         border-top: 1px solid #ddddddd1;
+         background-image: url(img/background-img.png);
+      }
+
+      /* .property-section:after {
+            content: '';
+            width: 100%;
+            height: 59.6%;
+            background: #fdd57e;
+            position: absolute;
+            top: 0;
+            z-index: 0;
+         } */
+
+      /* CARD */
+
+      .property-card {
+         background: #fff;
+         border-radius: 6px;
+         overflow: hidden;
+         box-shadow: 0px 10px 15px #0000007a;
+      }
+
+      /* IMAGE */
+      .property-img {
+         position: relative;
+      }
+
+      .property-img span {
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: #5391a0;
+         color: #fff;
+         padding: 8px 10px;
+      }
+
+      .property-img img {
+         width: 100%;
+         height: 200px;
+         object-fit: fill;
+      }
+
+      /* TOP CENTER TEXT */
+      .property-top {
+         background: #fff;
+         padding: 14px 15px;
+         text-align: center;
+
+      }
+
+      .property-top h4 {
+         font-size: 22px;
+         margin: 0;
+         line-height: 38px;
+         font-weight: 600;
+         text-align: center;
+         color: #3a3f4c;
+      }
+
+      .property-top span {
+         font-size: 16px;
+         color: #555;
+         line-height: 1.5;
+         text-align: center;
+      }
+
+      /* CONTENT */
+      .property-content {
+         padding: 15px 18px;
+         text-align: center;
+         flex-direction: column;
+         display: flex;
+         gap: 10px;
+      }
+
+      .location {
+         font-size: 18px;
+         color: #434343;
+         margin-bottom: 10px;
+         font-weight: normal;
+         border-bottom: 1px solid #ddddddd1;
+         padding-bottom: 15px;
+      }
+
+      .location i {
+         color: #f2b705;
+      }
+
+      /* INFO */
+      .property-info {
+         list-style: none;
+         padding: 0;
+         margin: auto;
+      }
+
+      .property-info li {
+         font-size: 16px;
+         color: #272525;
+         margin-bottom: 14px;
+         text-align: left;
+         display: flex;
+         line-height: 1.1;
+      }
+
+      .property-info i {
+         color: #5391a0;
+         margin-right: 6px;
+         font-size: 19px;
+      }
+
+      /* FOOTER */
+      .property-footer {
+         border-top: 1px solid #eee;
+         padding: 12px 10px 29px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-direction: column;
+         gap: 10px;
+      }
+
+      .btn-interest {
+         background: #fdd57e;
+         color: #000000;
+         padding: 10px 20px;
+         font-size: 18px;
+         border-radius: 4px;
+         text-decoration: none;
+         text-transform: capitalize;
+      }
+
+      .btn-interest:hover {
+         background: #d9a304;
+      }
+
+      .price {
+         font-size: 1.2rem;
+         font-weight: 500;
+         color: #5391a0;
+         display: inline-block;
+         border: 1px solid #5391a0;
+         padding: 8px 14px;
+
+      }
+
+
+      @media (max-width:992px) {
+         .property-section:after {
+            height: 100%;
+
+         }
+
+         .price-box {
+            gap: 30px !important;
+         }
+
+      }
+
+
+      /* end */
+   </style>
+
+   <!-- end -->
+
+   <section id="schedule-visit" class="visit-section">
+      <div class="overlay"></div>
+      <div class="visit-content text-center">
+         <h2>Schedule A Visit</h2>
+         <p>
+            Godrej Group comprises of a varied business portfolio that includes real estate development,
+            fast moving consumer goods, advanced engineering, home appliances, furniture, security, and agri-care.
+         </p>
+         <div class="visit-btns mt-4">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Schedule A
+               Visit</button>
+            <button class="btn btn-outline-light ms-3" data-bs-toggle="modal"
+               data-bs-target="#exampleModal">Enquire</button>
+         </div>
+      </div>
+   </section>
+
+   <style>
+      #schedule-visit {
+         position: relative;
+         background: url('img/godrej-miraya.avif') center center/cover no-repeat;
+         min-height: 50vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         text-align: center;
+         overflow: hidden;
+      }
+
+      #schedule-visit .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgb(0 0 0 / 81%);
+         backdrop-filter: blur(2px);
+         z-index: 1;
+      }
+
+      #schedule-visit .visit-content {
+         position: relative;
+         z-index: 2;
+         max-width: 800px;
+         padding: 0 1rem;
+      }
+
+      #schedule-visit h2 {
+         font-size: 1.3rem;
+         font-weight: 700;
+         margin-bottom: 1rem;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      #schedule-visit p {
+         font-size: 1rem;
+         line-height: 1.7;
+         color: #f5f5f5;
+      }
+
+      #schedule-visit .btn {
+         padding: 0.8rem 1.8rem;
+         font-size: 1rem;
+         border-radius: 30px;
+         transition: all 0.3s ease;
+      }
+
+      #schedule-visit .btn-primary {
+         background-color: #5391a0;
+         border: none;
+      }
+
+      #schedule-visit .btn-primary:hover {
+         background-color: #1a5d5d;
+         transform: scale(1.05);
+      }
+
+      #schedule-visit .btn-outline-light {
+         border: 2px solid #fff;
+         color: #fff;
+      }
+
+      #schedule-visit .btn-outline-light:hover {
+         background-color: #fff;
+         color: #000;
+         transform: scale(1.05);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+         #schedule-visit h2 {
+            font-size: 2rem;
+         }
+
+         #schedule-visit p {
+            font-size: 1rem;
+         }
+      }
+   </style>
+
+
+   <section id="amenities" class="py-5">
+      <div class="container-fluid px-lg-5">
+
+         <div class="row align-items-center">
+            <!-- Left Text -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+               <div class="amenities-text text-center">
+                  <h2 class="fw-bold mb-3">Features & Amenities</h2>
+                  <p class="mb-4 text-white">Discover world-class amenities designed to enhance your lifestyle </p>
+                  <div class="my-3">
+                     <button class="btn-brochure" data-bs-toggle="modal" data-bs-target="#exampleModal">Download
+                        Brochure</button>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Right Carousel -->
+            <div class="col-lg-8">
+               <div class="owl-carousel amenities-carousel owl-theme">
+                  <div class="item text-center">
+                     <div class="amenity-img">
+                        <img src="img/amenities-1.jpg" alt="Swimming Pool">
+                     </div>
+                     <h5>Swimming Pool</h5>
+                  </div>
+                  <div class="item text-center">
+                     <div class="amenity-img">
+                        <img src="img/amenities-2.webp" alt="Gymnasium">
+                     </div>
+                     <h5>Gymnasium</h5>
+                  </div>
+                  <div class="item text-center">
+                     <div class="amenity-img">
+                        <img src="img/amenities-3.jpeg" alt="Club House">
+                     </div>
+                     <h5>Club House</h5>
+                  </div>
+                  <div class="item text-center">
+                     <div class="amenity-img">
+                        <img src="img/amenities-4.png" alt="Children’s Play Area">
+                     </div>
+                     <h5>Parking</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <style>
+      #amenities {
+         padding: 4rem 0rem;
+         /* background-image: url("img/wood.webp"); */
+         background-color: #E0E0E0;
+         color: #fff;
+         position: relative;
+      }
+
+      /* #amenities::before{
+   content: "";
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   top: 0;
+   right: 0;
+   background-color: #FFFEEE;
+   z-index: 1;
+} */
+      .left-animationimage {
+         position: absolute;
+         z-index: 2;
+         top: 5%;
+         left: 3%;
+         background-image: url('img/leaf-vector.png');
+         width: 20rem;
+         height: 20rem;
+         background-size: contain;
+         background-repeat: no-repeat;
+         animation: floatUpDown 4s ease-in-out infinite;
+      }
+
+
+      @keyframes floatUpDown {
+
+         0%,
+         100% {
+            transform: translateY(0);
+         }
+
+         50% {
+            transform: translateY(-20px);
+         }
+      }
+
+
+
+
+      .amenities-text h2 {
+         font-size: 1.5rem;
+         font-weight: 800;
+         color: #5391a0;
+         margin: 1rem 0rem;
+         line-height: 3rem;
+      }
+
+      .amenities-carousel .item {
+         background-color: #ffffff;
+         border-radius: 12px;
+         padding: 10px;
+      }
+
+      .amenities-text p {
+         color: #000 !important;
+         font-size: 1rem;
+         line-height: 1.6;
+      }
+
+      .btn-brochure {
+         background: #5391a0;
+         color: #fff;
+         border: none;
+         padding: 16px 28px;
+         border-radius: 50px;
+         font-weight: 600;
+         transition: 0.3s ease;
+      }
+
+      .btn-brochure:hover {
+         background: #684831;
+         transform: scale(1.05);
+      }
+
+      .amenity-img {
+         overflow: hidden;
+         border-radius: 12px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+         margin-bottom: 1rem;
+      }
+
+      .amenity-img img {
+         width: 100%;
+         height: 300px;
+         object-fit: cover;
+         transition: transform 0.5s ease;
+      }
+
+      .amenity-img:hover img {
+         transform: scale(1.1);
+      }
+
+      .amenities-carousel h5 {
+         font-weight: 600;
+         color: #333;
+      }
+
+      .owl-dots {
+         margin-top: 15px;
+      }
+
+      .owl-dot span {
+         width: 12px;
+         height: 12px;
+         background: #d4af37;
+         opacity: 0.5;
+         transition: all 0.3s ease;
+      }
+
+      .owl-dot.active span {
+         opacity: 1;
+         transform: scale(1.2);
+      }
+
+
+      .owl-theme .owl-dots .owl-dot span {
+         background: #000000;
+      }
+
+      @media (max-width: 768px) {
+         .amenities-text {
+            text-align: center;
+         }
+
+         .btn-brochure {
+            width: 100%;
+         }
+
+         .amenities-text h2 {
+            margin: 0;
+            line-height: 1rem;
+         }
+
+         .left-animationimage {
+            display: none;
+         }
+
+         .amenity-img img {
+            height: 250px;
+         }
+      }
+   </style>
+
+   <!-- end -->
+   <!-- =========== amenities section start =============== -->
+
+   <footer>
+      <div class="footer_bg" id="contectus">
+         <div class="footer">
+            <div class="container">
+               <!-- <div class="col-lg-12 text-center mb-5"> <img src="img/logo1.png" width="150" alt=""> </div> -->
+               <div class="row">
+                  <div class="col-lg-7 col-md-6 mb-5">
+                     <div class="footer_contant">
+                        <h3>About Godrej Property In Gurgaon</h3>
+                        <p class="mb-3 mt-3 col-lg-11">Godrej Properties is thrilled to announce the opening of another
+                           significant chapter with the launch of "Godrej Vrikshya Gurgaon," a new residential
+                           development. This project offers residents an environment conducive to holistic growth and
+                           satisfaction. It's not just a property but a future-ready home designed to meet every need
+                           and bring about positive change, making it a worthy investment.
+                        </p>
+
+
+                        <div class="contact_us mt-5">
+                           <ul class="d-flex align-items-center">
+                              <li><a href="tel:+91-8081969456">
+                                    <i class="fa-solid fa-phone-volume"></i></a>
+                              </li>
+                              <li class="ms-3">
+                                 <p class="pb-1">Call Us Anytime</p> <a
+                                    href="tel:+91-8081969456"><span>+91-8081969456</span></a>
+                              </li>
+                           </ul>
+
+                        </div>
+
+
+                     </div>
+                  </div>
+
+
+
+
+
+                  <div class="col-lg-5  col-md-6 mb-4">
+                     <div class="contect-form">
+                        <form method="post" action="https://fdr-api.pixleo.com/lead" class="contact-form banner_form">
+                           <div class="form_section">
+                              <h3 class="form_title mb-3">Schedule A Site Visit</h3>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                    class="form-control text_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                    class="form-control text_form email-address"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="phone-group mb-3">
+                                 <select name="COUNTRYCODE" id="COUNTRYCODE" required>
+                                    <option value="+971">🇦🇪 +971 (UAE)</option>
+                                    <option value="+91">🇮🇳 +91 (India)</option>
+                                    <option value="+93">🇦🇫 +93 (Afghanistan)</option>
+                                    <option value="+355">🇦🇱 +355 (Albania)</option>
+                                    <option value="+213">🇩🇿 +213 (Algeria)</option>
+                                    <option value="+376">🇦🇩 +376 (Andorra)</option>
+                                    <option value="+244">🇦🇴 +244 (Angola)</option>
+                                    <option value="+1-268">🇦🇬 +1-268 (Antigua & Barbuda)</option>
+                                    <option value="+54">🇦🇷 +54 (Argentina)</option>
+                                    <option value="+374">🇦🇲 +374 (Armenia)</option>
+                                    <option value="+61">🇦🇺 +61 (Australia)</option>
+                                    <option value="+43">🇦🇹 +43 (Austria)</option>
+                                    <option value="+994">🇦🇿 +994 (Azerbaijan)</option>
+                                    <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                                    <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                                    <option value="+375">🇧🇾 +375 (Belarus)</option>
+                                    <option value="+32">🇧🇪 +32 (Belgium)</option>
+                                    <option value="+501">🇧🇿 +501 (Belize)</option>
+                                    <option value="+229">🇧🇯 +229 (Benin)</option>
+                                    <option value="+975">🇧🇹 +975 (Bhutan)</option>
+                                    <option value="+591">🇧🇴 +591 (Bolivia)</option>
+                                    <option value="+387">🇧🇦 +387 (Bosnia & Herzegovina)</option>
+                                    <option value="+267">🇧🇼 +267 (Botswana)</option>
+                                    <option value="+55">🇧🇷 +55 (Brazil)</option>
+                                    <option value="+673">🇧🇳 +673 (Brunei)</option>
+                                    <option value="+359">🇧🇬 +359 (Bulgaria)</option>
+                                    <option value="+226">🇧🇫 +226 (Burkina Faso)</option>
+                                    <option value="+95">🇲🇲 +95 (Myanmar (Burma))</option>
+                                    <option value="+257">🇧🇮 +257 (Burundi)</option>
+                                    <option value="+855">🇰🇭 +855 (Cambodia)</option>
+                                    <option value="+237">🇨🇲 +237 (Cameroon)</option>
+                                    <option value="+1">🇨🇦 +1 (Canada)</option>
+                                    <option value="+238">🇨🇻 +238 (Cape Verde)</option>
+                                    <option value="+236">🇨🇫 +236 (Central African Republic)</option>
+                                    <option value="+235">🇹🇩 +235 (Chad)</option>
+                                    <option value="+56">🇨🇱 +56 (Chile)</option>
+                                    <option value="+86">🇨🇳 +86 (China)</option>
+                                    <option value="+57">🇨🇴 +57 (Colombia)</option>
+                                    <option value="+269">🇰🇲 +269 (Comoros)</option>
+                                    <option value="+506">🇨🇷 +506 (Costa Rica)</option>
+                                    <option value="+385">🇭🇷 +385 (Croatia)</option>
+                                    <option value="+53">🇨🇺 +53 (Cuba)</option>
+                                    <option value="+357">🇨🇾 +357 (Cyprus)</option>
+                                    <option value="+420">🇨🇿 +420 (Czech Republic)</option>
+                                    <option value="+45">🇩🇰 +45 (Denmark)</option>
+                                    <option value="+253">🇩🇯 +253 (Djibouti)</option>
+                                    <option value="+1-767">🇩🇲 +1-767 (Dominica)</option>
+                                    <option value="+1-809">🇩🇴 +1-809 (Dominican Republic)</option>
+                                    <option value="+593">🇪🇨 +593 (Ecuador)</option>
+                                    <option value="+20">🇪🇬 +20 (Egypt)</option>
+                                    <option value="+503">🇸🇻 +503 (El Salvador)</option>
+                                    <option value="+240">🇬🇶 +240 (Equatorial Guinea)</option>
+                                    <option value="+291">🇪🇷 +291 (Eritrea)</option>
+                                    <option value="+372">🇪🇪 +372 (Estonia)</option>
+                                    <option value="+251">🇪🇹 +251 (Ethiopia)</option>
+                                    <option value="+679">🇫🇯 +679 (Fiji)</option>
+                                    <option value="+358">🇫🇮 +358 (Finland)</option>
+                                    <option value="+33">🇫🇷 +33 (France)</option>
+                                    <option value="+995">🇬🇪 +995 (Georgia)</option>
+                                    <option value="+49">🇩🇪 +49 (Germany)</option>
+                                    <option value="+233">🇬🇭 +233 (Ghana)</option>
+                                    <option value="+30">🇬🇷 +30 (Greece)</option>
+                                    <option value="+852">🇭🇰 +852 (Hong Kong)</option>
+                                    <option value="+36">🇭🇺 +36 (Hungary)</option>
+                                    <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                                    <option value="+98">🇮🇷 +98 (Iran)</option>
+                                    <option value="+964">🇮🇶 +964 (Iraq)</option>
+                                    <option value="+353">🇮🇪 +353 (Ireland)</option>
+                                    <option value="+972">🇮🇱 +972 (Israel)</option>
+                                    <option value="+39">🇮🇹 +39 (Italy)</option>
+                                    <option value="+81">🇯🇵 +81 (Japan)</option>
+                                    <option value="+962">🇯🇴 +962 (Jordan)</option>
+                                    <option value="+7">🇷🇺 +7 (Kazakhstan/Russia)</option>
+                                    <option value="+254">🇰🇪 +254 (Kenya)</option>
+                                    <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                                    <option value="+996">🇰🇬 +996 (Kyrgyzstan)</option>
+                                    <option value="+856">🇱🇦 +856 (Laos)</option>
+                                    <option value="+371">🇱🇻 +371 (Latvia)</option>
+                                    <option value="+961">🇱🇧 +961 (Lebanon)</option>
+                                    <option value="+218">🇱🇾 +218 (Libya)</option>
+                                    <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                                    <option value="+352">🇱🇺 +352 (Luxembourg)</option>
+                                    <option value="+853">🇲🇴 +853 (Macau)</option>
+                                    <option value="+389">🇲🇰 +389 (North Macedonia)</option>
+                                    <option value="+261">🇲🇬 +261 (Madagascar)</option>
+                                    <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                                    <option value="+960">🇲🇻 +960 (Maldives)</option>
+                                    <option value="+223">🇲🇱 +223 (Mali)</option>
+                                    <option value="+356">🇲🇹 +356 (Malta)</option>
+                                    <option value="+230">🇲🇺 +230 (Mauritius)</option>
+                                    <option value="+52">🇲🇽 +52 (Mexico)</option>
+                                    <option value="+373">🇲🇩 +373 (Moldova)</option>
+                                    <option value="+976">🇲🇳 +976 (Mongolia)</option>
+                                    <option value="+212">🇲🇦 +212 (Morocco)</option>
+                                    <option value="+95">🇲🇲 +95 (Myanmar)</option>
+                                    <option value="+977">🇳🇵 +977 (Nepal)</option>
+                                    <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                                    <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                                    <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                                    <option value="+47">🇳🇴 +47 (Norway)</option>
+                                    <option value="+968">🇴🇲 +968 (Oman)</option>
+                                    <option value="+507">🇵🇦 +507 (Panama)</option>
+                                    <option value="+51">🇵🇪 +51 (Peru)</option>
+                                    <option value="+63">🇵🇭 +63 (Philippines)</option>
+                                    <option value="+48">🇵🇱 +48 (Poland)</option>
+                                    <option value="+351">🇵🇹 +351 (Portugal)</option>
+                                    <option value="+974">🇶🇦 +974 (Qatar)</option>
+                                    <option value="+40">🇷🇴 +40 (Romania)</option>
+                                    <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                                    <option value="+65">🇸🇬 +65 (Singapore)</option>
+                                    <option value="+421">🇸🇰 +421 (Slovakia)</option>
+                                    <option value="+386">🇸🇮 +386 (Slovenia)</option>
+                                    <option value="+27">🇿🇦 +27 (South Africa)</option>
+                                    <option value="+82">🇰🇷 +82 (South Korea)</option>
+                                    <option value="+34">🇪🇸 +34 (Spain)</option>
+                                    <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                                    <option value="+46">🇸🇪 +46 (Sweden)</option>
+                                    <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                                    <option value="+886">🇹🇼 +886 (Taiwan)</option>
+                                    <option value="+66">🇹🇭 +66 (Thailand)</option>
+                                    <option value="+90">🇹🇷 +90 (Turkey)</option>
+                                    <option value="+44">🇬🇧 +44 (UK)</option>
+                                    <option value="+380">🇺🇦 +380 (Ukraine)</option>
+                                    <option value="+598">🇺🇾 +598 (Uruguay)</option>
+                                    <option value="+998">🇺🇿 +998 (Uzbekistan)</option>
+                                    <option value="+58">🇻🇪 +58 (Venezuela)</option>
+                                    <option value="+84">🇻🇳 +84 (Vietnam)</option>
+                                    <option value="+967">🇾🇪 +967 (Yemen)</option>
+                                    <option value="+260">🇿🇲 +260 (Zambia)</option>
+                                    <option value="+263">🇿🇼 +263 (Zimbabwe)</option>
+                                 </select>
+                                 <input type="text" name="PHONE" id="PHONE" placeholder="Phone/Mobile" required
+                                    pattern="[0-9]{6,14}">
+                              </div>
+                              <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                 value="https://www.godrejnewlaunch.net/gurgaon-platter/in">
+
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                       CALL BACK</button>
+                                    <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                       value="Godrej Projects in Gurgaon">
+                                    <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200"
+                                       type="hidden" value="Gurgaon - International">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                        
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer_b mt-4">
+                  <div class="col-sm-12 text-center box">
+                     <p class="col-lg-11 information-web"><b> Disclaimer:</b> The content is for information purposes
+                        only and does not constitute an offer to avail of any service. Prices mentioned are subject to
+                        change without notice and properties mentioned are subject to availability. Images for
+                        representation purposes only. This website is belong to authorized marketing partner.
+                     </p>
+                     <div class="mt-3">
+
+                        <h4 style="font-size: 13px; color: #000000;" class="mt-2 lh-lg"> Agent Rera :
+                           PRM/KA/RERA/1251/446/AG/231007/004164 <br>
+                           Projects Rera -
+                           Godrej Vrikshya : RC/REP/HARERA/GGM/846/578/2024/73 | Godrej Aristocrat :
+                           RC/REP/HARERA/GGM/767/499/2023/111 | Godrej Astra : RERA-GRG-1725-2024
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bootom">
+         <ul class="footermenu">
+            <li>
+               <p style="text-align: center; font-size: 13px; "><a href="disclaimer.html" target="_blank"><span
+                        style="color: #5391a0;">Privacy Policy</span></a>&nbsp;|&nbsp;<a href="disclaimer.html"
+                     target="_blank"><span style="color: #000000;"></span></a> Digital Media Planned |
+                  <a href="http://www.umikoweb.com/" target="_blank">by Umiko Web</a>
+               </p>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
+   <!-- ===============footer section start========================== -->
+
+
+   <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/popper/popper.min.js"></script>
+   <script src="js/bootstrap/bootstrap.min.js"></script>
+
+   <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+   <script src="js/jquery.appear.js"></script>
+   <script src="js/counter/jquery.countTo.js"></script>
+   <script src="js/select2/select2.full.js"></script>
+   <script src="js/range-slider/ion.rangeSlider.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+   <script src="js/jarallax/jarallax.min.js"></script>
+   <script src="js/jarallax/jarallax-video.min.js"></script>
+   <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script> -->
+   <script src="js/main_js.js"></script>
+   <script src="js/custom.js"></script>
+
+   <script>
+      function proprtyForm(titlehoem) {
+         $('#prog550688').val(titlehoem);
+         $('#enquireModalLabel').text(titlehoem);
+         $('#enquireModal').modal('show');
+      }
+
+
+      $(document).ready(function () {
+         setTimeout(() => {
+            $('#newlaunchModal').modal('show')
+         }, 1000);
+      })
+
+
+      $('.amenities-carousel').owlCarousel({
+         items: 2,
+         loop: true,
+         autoplay: true,
+         autoplayTimeout: 2500,
+         smartSpeed: 900,
+         dots: true,
+         nav: false,
+         margin: 20,
+         responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1200: { items: 3 }
+         }
+      });
+
+
+
+   </script>
+
+
+</body>
+
+</html>
